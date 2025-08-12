@@ -1,0 +1,1 @@
+python3 ../upload-data/upload_flight_data.py 
