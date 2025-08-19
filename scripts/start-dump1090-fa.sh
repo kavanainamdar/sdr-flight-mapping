@@ -5,5 +5,7 @@
 DATA_JSON_PATH="../data/"
 JSON_LOCATION_ACCURACY=1
 
-sudo dump1090-fa --interactive --net --write-json ${DATA_JSON_PATH} \
+sudo dump1090-fa --interactive --net --net-buffer 5 \
+    --device-type rtlsdr --device-index 0 \
+    --write-json ${DATA_JSON_PATH} \
     --json-location-accuracy ${JSON_LOCATION_ACCURACY}
