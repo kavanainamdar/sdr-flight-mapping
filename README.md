@@ -15,10 +15,14 @@ Aircraft constantly broadcast their positions and identifiers using invisible ra
 - **Link to API**: https://sdr-flight-mapping-api.azurewebsites.net/api/flights
 - **Public Web App (front-end/sdr-flight-map)** – Displays live aircraft positions on an interactive Leaflet map.
 - **Link to Webapp**: https://sdr-flight-map-webapp.azurewebsites.net/
-- **Link for demo**: file:///home/kavana/Videos/Flight%20Map%20Demo.webm
+
 - **Cloud Database (Azure SQL Database)** – Stores all decoded flight data for querying and display.
 - **Near Real-Time Updates** – Uses Http Web APIs for instant map updates without page reloads.
 - **Cross-Platform Pipeline** – From physical radio reception to global web access.
+
+## Demo
+
+![Flight Map Demo](assets/sdr-flight-mapping.gif)
 
 ---
 
