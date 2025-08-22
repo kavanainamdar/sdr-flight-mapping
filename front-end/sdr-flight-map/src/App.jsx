@@ -1,9 +1,9 @@
-import FlightMap from "./components/FlightMap";
+import FlightDashboard from "./components/FlightDashboard";
 
 function App() {
 
   return (
-      <FlightMap />
+    <FlightDashboard />
   );
 }
 

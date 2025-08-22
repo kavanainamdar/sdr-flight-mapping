@@ -9,3 +9,105 @@ html, body, #root {
   height: 100%;
   width: 100%;
 }
+
+/* Layout */
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  height: 100vh;
+  width: 100%;
+}
+
+.map-col {
+  position: relative;
+  min-width: 0; /* helps Leaflet fit correctly */
+}
+
+.side-col {
+  background: #0b1020;
+  color: #e8ecf6;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  overflow: auto;
+}
+
+.side-inner {
+  padding: 1rem 1rem 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* Panels */
+.panel-section {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.panel-heading {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.panel-text {
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.blurb {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Repo link */
+.repo-link {
+  display: inline-block;
+  word-break: break-all;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 0.5rem 0.6rem;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  transition: transform 120ms ease, background 120ms ease;
+  color: #d7e3ff;
+}
+
+.repo-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* Legend */
+.legend-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.legend-title {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.legend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
